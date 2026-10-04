@@ -14,6 +14,13 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v30: HOSPITAL BILLS
+  - Dying costs money now: the hospital bills $500 plus a quarter of the
+    company's cash. Paid in full, you wake up with food and water at 60.
+  - Can't cover it? They take everything you have and patch you up
+    cheaply: you wake up hungry and thirsty (20). Dying is no longer a
+    free way to refill food and water.
+
 NEW IN v29: REAL CAVES, AND GOING DOWN
   - Cave mouths are rocky hills with a dark arch you can see from far off.
     Walk into the arch to go in; the hill round it is solid rock.
