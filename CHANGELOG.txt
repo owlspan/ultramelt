@@ -14,6 +14,26 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v31: COMPANIES, ROGUES AND GANGS (servers with companies=separate)
+  - Joining: you choose. Join a company that's there, found your own (you
+    name it) while there's room (max-companies), or go rogue.
+  - U: your company screen. Founders rename their company, fire people
+    and let people in. Anyone else can leave (and goes rogue).
+  - ROGUES have no company: no land, can't buy or sell at a head office,
+    can only build a campfire, water pot or beacon (made by hand on the U
+    screen), get hungry and thirsty faster, and wake up out in the wild.
+    But they're quicker on foot, their name only shows up close, raids
+    leave them alone, the hospital only bills $100 + 10%, the trader
+    fences their stuff (40%), and killing a company player takes 35% of
+    that player's hospital bill. Ask to join a company, found one, or...
+  - GANGS: a rogue for 2 days can start a gang and let other rogues in.
+    A shared purse, a camp (your campfire is where you wake up), and camp
+    things to build anywhere free: walls, doors, beds, lamps, lockers,
+    floors, roofs. Still no land, no machines, no head office.
+  - Fighting players: server.properties pvp-companies=true (different
+    companies, rogues and gangs can hurt each other) and pvp-team=false
+    (your own team can't). Guns do half damage to people (55 at most).
+
 NEW IN v30: HOSPITAL BILLS
   - Dying costs money now: the hospital bills $500 plus a quarter of the
     company's cash. Paid in full, you wake up with food and water at 60.
