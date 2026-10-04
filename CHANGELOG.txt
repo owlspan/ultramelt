@@ -1,0 +1,646 @@
+ULTRAMELT 2: MONOPOLY
+=====================
+You took the South Pole. Now build the plant. Mine, chop, craft, belt it
+into machines, fill head office's contracts, and buy up the land.
+
+FILES
+  ultramelt2.exe       Windows
+  ultramelt2-linux     Linux   (chmod +x ultramelt2-linux, then ./ultramelt2-linux)
+  ultramelt2-macos     Mac     (chmod +x, and if macOS blocks it:
+                                xattr -d com.apple.quarantine ultramelt2-macos)
+  server/              the dedicated server (no graphics needed): see SERVER.txt
+  source/              the whole game's source; ./build.sh, ./dist.sh
+
+PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
+you through the first steps (mining, conveyors, storage, smelting).
+
+NEW IN v27: AUTOMATIC UPDATES
+  - The game checks github.com/owlspan/ultramelt (branch ultramelt2)
+    when it starts. If there's a newer version, click UPDATE at the top
+    of the title screen: it downloads, installs and restarts by itself.
+    The files there are scrambled - only the game can open them, and
+    it checks each one before using it. update.txt: url=off turns it off.
+    (UltraMelt 1 updates the same way, from branch ultramelt.)
+
+NEW IN v26: ELECTRICITY, RAIL CARTS
+  - ELECTRICITY: machines (miners, smelters, assemblers, everything that
+    makes things) now run at 70% speed without power and at 160% with
+    it. A running GENERATOR powers 6 tiles round it. POWER POLES
+    (LOGISTICS tab, 3 wood + 2 wire) carry it on: a pole within 6 tiles
+    of a running generator, or 10 of another live pole, lights up and
+    powers 4 tiles round it. Live poles glow.
+  - RAIL STATIONS (LOGISTICS tab): belt items into a station; a cart
+    carries up to 10 at a time to your nearest other station on the
+    same channel (E changes it, 1-9) - across plots that don't touch,
+    over water, anywhere. Items come out of the far station's front.
+    The way to move goods between bases now that storage + inserter
+    is slow.
+
+NEW IN v25: THE TRADER, RAIDS
+  - THE TRADER: on even days a caravan camps by head office from morning
+    until mid-afternoon (E on the trader). It sells three rare parts and
+    a piece of gear you may not be able to make yet, and pays two and a
+    half times the price for one product it wants (up to 10 a visit).
+    Different things every visit.
+  - RAIDS: from day 10, every third night a pack comes for one of your
+    bases - wolves and bears, stalkers from day 16, a yeti from day 22,
+    more each time. They go for your buildings and bash through walls
+    (steel holds longest). Turrets, walls and huskies are your friends.
+    Before day 10 nothing comes for the plant at all - the lone polar
+    bear that used to now waits for day 10 too.
+  - FIXED (v24): E on a waypoint beacon opened the boardroom.
+
+NEW IN v24: THE MAP, BEACONS, HUSKIES, THE DOG SLED
+  - THE MAP (K): everywhere you've been, remembered for each world.
+    Drag to look around, + and - to zoom, ME to come back to you.
+    Shows players, head office, your bed and your beacons.
+  - WAYPOINT BEACON (LOGISTICS tab): E on it to name it, and to ride to
+    any of your other beacons for a fee (more the further it is).
+    Beacons show on the map by name.
+  - HUSKIES roam the snow. Walk up with raw meat or a steak and press E:
+    it's yours. A tame husky follows you, and goes for wolves, bears,
+    yetis, wraiths, stalkers - and the boxing bear - near you.
+  - DOG SLED (LOGISTICS tab): E to ride. Needs 2 tame huskies with you;
+    they pull it, no fuel needed.
+
+NEW IN v23: WATER POT, WALLS STOP ANIMALS, LAND ANYWHERE, BALANCE
+  - WATER POT (BASE tab, 3 plate): E with dirty water or ice and 1 wood
+    or coal - it boils up to 10 at a time; E again when it's done for
+    clean water. The WATER PURIFIER now also works by hand: E on it
+    with dirty water or ice cleans it all at once.
+  - ANIMALS NO LONGER WALK THROUGH YOUR BUILDINGS: walls, shut doors,
+    windows, railings and scaffolding stop bears, wolves, the boxing
+    bear and the hunter.
+  - BUY LAND ANYWHERE: any free plot can be bought (B), not just the
+    ones next to yours. One that doesn't touch your land costs half as
+    much again - cheaper than a long bridge to the cobalt.
+  - BALANCE, so the game takes longer to beat and farms dry up:
+    inserters pulling out of a storage or head office are slow (one
+    item every 6 s) - the company stock isn't a teleporter any more;
+    buying shares pushes their price up twice as fast (the 51%
+    takeover costs about twice as much); a second casino or hotel pays
+    half, a third a third, and so on.
+
+NEW IN v22: CRAFT GUIDE, STEPS, PILLARS, FIXES
+  - CRAFT GUIDE (workbench: the CRAFT GUIDE button, or click any name on
+    the bench). Pick anything and see what it's made from and on which
+    machine (or by hand), how to get it (mine it, pump it, chop it, buy
+    it at head office), what it sells for, and what it's used for.
+    Every ingredient and machine is a button - click your way down the
+    whole chain. BACK goes back.
+  - STEPS (BASE tab): a short ramp from the ground up onto your first
+    scaffolding level, no ladder needed. R turns it.
+  - PILLAR (BASE tab): a slim post you stand on a floor. It holds up the
+    floor one storey above, so upper floors can reach into the middle
+    of a big room (a floor still reaches one tile past what holds it).
+  - STAIRS ON A FLOOR: hold stairs and point at a floor tile - it turns
+    into stairs going up (you get the floor back).
+  - THE BOXING BEAR now starts fresh and gets a black eye, bruises, then
+    cuts and a plaster as its health goes down.
+  - FIXED (servers): the Hunter's and the Boxing Bear's health bar on
+    joined players showed the wrong health or didn't move. The host
+    now sends their health.
+  - EXPORT PADS: raw stuff (crystal, ore, coal...) now floods the market
+    like products do: sell a lot and its price drops (down to 5%), then
+    comes back over a few minutes. A drill on an export pad is no
+    longer an endless money fountain. Products work as before.
+  - FIXED: putting a building piece where something already was could
+    eat the kit.
+  - MAC: double-click "START ON MAC.command" (see "MAC - HOW TO
+    START.txt") - no Terminal needed.
+
+NEW IN v21: SHARED LOCKERS, THINGS ON FLOORS, FIXES, MAC
+  - FIXED: the > arrow on the storage screen (page 2) crashed the game,
+    and so did anything that showed the short name of the new rock
+    items (stone, gravel, glass...) - in your hands, the sell list...
+  - FIXED: on Windows the log (ultramelt2_log.txt) only ever had its
+    first line. It now has everything, crashes included.
+  - LOCKERS ARE SHARED, like chests: a locker belongs to the world, not
+    to you. Everyone who opens it sees the same things, and the host
+    does every move, so two people at one locker can't copy or lose
+    anything. What you had in your own lockers before moves in the
+    first time you open them. A locker with things in it can't be
+    picked up - empty it first.
+  - DROPPED THINGS (Q) ARE SEEN BY EVERYONE now, and anyone can pick
+    them up (only one person gets them). Another way to give stuff.
+  - PUT THINGS ON FLOORS: aim at the top of a floor (or a balcony, or
+    an upper storey) holding a locker, bed, workbench, lamp, machine...
+    and it goes there. Miners, pumpjacks, mine shafts and wells still
+    need the ground.
+  - MAC: FIXED the crash at start (illegal instruction / SIGILL) on
+    Apple Silicon Macs. The game file had no room for the signature, so
+    signing it (codesign) wrote over the first bytes of the program.
+
+NEW IN v20: TRADING, ACHIEVEMENTS, LEVIATHAN MUSIC
+  - FIXED: scaffolding and other building pieces invisible on some
+    Windows graphics cards (mostly when playing on a server). The game
+    no longer asks the graphics driver to remember the pieces; it keeps
+    them itself and redraws them every frame.
+  - TRADING (Y): stand next to a player, look at them, press Y. They
+    press Y to accept. Click your things to put them on the table (shift:
+    10 at a time); in OWN COMPANIES games you can add cash too. Both
+    press READY; changing the offer takes READY away from both, so nobody
+    gets tricked. The host does the swap.
+  - ACHIEVEMENTS (J): 19 of them, kept across all your worlds, most with
+    a cash reward: goals, money, land, the rock line, trades, all four
+    bosses, companies...
+  - THE LEVIATHAN HAS ITS OWN MUSIC: drums, a growling bass and horns,
+    while you fight it.
+  - The log (ultramelt2_log.txt next to the game) now says each step of
+    starting up, so a crash at the start shows where it stopped.
+
+NEW IN v19: FIXES, THE ROCK LINE, COMPANIES
+  - FIXED: building pieces (scaffolding, foundations...) that were
+    invisible or showed late, or came back after being removed: the
+    picture of every block near you is now rebuilt now and then from
+    what's really there, and a change redraws its neighbours too.
+  - FIXED: players dropping out now and then (a hiccup when checking the
+    connection was taken for the connection being gone).
+  - OFFICE SHOP: buy 1, 10 or 50 at a time.
+  - Other players now show what they wear: fur coat, heated suit, body
+    armour, jetpack or scuba tank, backpacks, a lit headlamp.
+  - THE ROCK LINE: the grey spikes give STONE. Crusher: stone -> gravel,
+    gravel -> sand. New machines (FACTORY tab): STONE SAW (2 stone -> cut
+    stone), KILN (2 sand + coal -> glass), CEMENT MIXER (2 gravel + sand
+    -> 2 concrete), SIFTER (5 gravel -> rough gem), POLISHER (cut stone +
+    sand -> polished stone; rough gem + 2 sand -> CUT GEM, $260).
+    Production line: STAINED GLASS ($95) and MARBLE STATUE ($900).
+  - COMPANIES (first version): server.properties companies=separate (or
+    PLAYERS: OWN COMPANIES when hosting) gives each new player a company
+    of their own: own money, land, storage and head office with antenna,
+    at least 5 plots from anyone else, land outlined in its colour, and
+    nobody can build or break on someone else's land. Past max-companies
+    the server console asks: new, or join N.
+
+NEW IN v18: POLISH, CRASH LOG, BACKUPS, UPDATES
+  - UNDERWATER: bubbles drift up the screen as you swim and burst past
+    your mask when you breathe out, every sound is muffled, and without a
+    scuba kit an AIR bar counts down. Your heart pounds when your air or
+    health runs low.
+  - WAKING UP: if you have a bed you choose MY BED (1) or HEAD OFFICE (2),
+    then drop in from the sky. 5 seconds of protection after.
+  - THE DEATH SCREEN says what killed you ("KILLED BY THE LEVIATHAN'S
+    ICE SHARDS", "THE COLD", "DROWNING"...). You never lose your things.
+  - THE KILL FEED (right side): who died to what, who killed what, who
+    beat a boss and who did the most damage.
+  - BOSS DAMAGE TABLE (left side) in boss fights: everyone's damage, live.
+  - FIXED: the building-creak and collapse sounds never played; the
+    Leviathan's charge and Max's fists didn't hurt the host.
+  - CRASH LOG: ultramelt2_log.txt next to the game says what the game did
+    as it started. If it crashes, the error is in there, and the next
+    start says so on the title (copied to ultramelt2_lastcrash.txt).
+    Send me that file if the game ever closes by itself.
+  - FIXED a likely cause of "closes right after starting": the game found
+    its window by its title, and could grab the window of an old copy
+    that was stuck. Each copy now finds its own window.
+  - BACKUPS: the last 5 saves of each world are kept (one when you open
+    it, then every 10 minutes) in ultramelt2_worlds/backups. PLAY or
+    HOST > BACKUPS next to a world > RESTORE.
+  - UPDATES: put an address in update.txt (see inside) and the game checks
+    for a newer version when it starts; one click downloads it, swaps it
+    in and restarts.
+
+NEW IN v17: NO MORE FREEZING WHEN HOSTING, MAC FIXES, MORE DETAIL
+  - HOSTING NO LONGER SLOWS DOWN AND FREEZES. While a game was hosted (or
+    joined), memory was never cleaned up: it grew by tens of megabytes a
+    second until the game stuttered more and more and froze. The network
+    is now read without waiting threads, so memory stays flat. Tested:
+    a host and a friend for six minutes, memory steady on both.
+  - If the game closed straight away after you force-quit it: an old copy
+    may still be running. End every ultramelt2.exe in Task Manager (or
+    restart), then start it again.
+  - MAC: every key types (the right half of the keyboard did nothing), no
+    more alert sound on each key press, the mouse turns the camera, and
+    the online code is drawn smaller.
+  - FARTHER DETAIL: ore, coal and crystals stay visible twice as far,
+    trees keep their full shape much further out, the hills are more
+    detailed in the distance, and buildings are drawn until the fog
+    hides them. VIEW DISTANCE in settings goes further too.
+  - 5 SECONDS OF PROTECTION after you wake up: nothing can hurt you
+    ("PROTECTED" blinks under the crosshair).
+  - SWIMMING in the Leviathan's flooded lair: hold W and you swim where
+    you look (look up to rise, down to dive), SPACE swims up, CTRL/C
+    swims down, SHIFT swims faster. You hang in the water and sink only
+    slowly. The Leviathan comes up after you: its charges and ice shards
+    aim at whatever height you're at.
+  - Fixed a crash when looking at the walls of the Leviathan's lair.
+  - THE LEVIATHAN is bigger and more detailed: a longer body that curves
+    smoothly, rows of scales and sailed spines, a frill round its head,
+    a longer snout full of fangs, long whiskers, webbed flippers and a
+    big ribbed tail fin.
+
+NEW IN v16: THE FACTORY, THE STOCK MARKET, AND AN ENDING
+  - PRODUCTION LINE (workbench, FACTORY tab): belt parts in, E picks what
+    it makes. 13 PRODUCTS to sell: toolkits, snow boots, solar panels,
+    phones, laptops, drones, jewelry, canned food, fuel drums, electric
+    cars - and the complex ones made from those: ROBOTS, SATELLITES and
+    MINI REACTORS. Sell one kind too fast and its price sags a while.
+  - THE STOCK MARKET: Maxinator Petroleum (MXP) is listed: 100,000
+    shares at about $10 to start. Sales (products most), contracts, tourists and bosses push it
+    up; collapses, stranded tourists and bad quarters push it down.
+    Every game day is a quarter: the shareholders expect a sum (it grows
+    each time). Beat it and the price jumps; happy shareholders pay a
+    dividend on your shares. It's not on screen: see it in THE BOARDROOM
+    at head office (chart, mood, who owns what, buy and sell shares).
+  - THE POLAR TIMES: headlines slide in at the right of the screen.
+  - THE END GAME: own 51% of the 100,000 shares (they start at $10 and
+    climb as the company does well: buy in slowly), have $2,000,000 in
+    the bank, sell the board 10
+    robots, 5 satellites, 3 mini reactors and 10 electric cars, keep the
+    shareholders from anger - then call the shareholder meeting and take
+    the company from Max. In person. He has security, and something big
+    in reserve. Win: the credits roll, you're CEO, and you play on.
+  - THE LEVIATHAN: below a mine's 4th level a ladder goes down to the
+    Frozen Deep: a flooded cavern. Take a SCUBA KIT (workbench, GEAR tab)
+    or you'll drown. The water ripples and blurs and you can't see far.
+    A huge sea serpent weaves round you, spits ice, and charges (it
+    glows red first: get out of the way!). $250,000.
+  - BOTH FIGHTS ARE MULTIPLAYER: everyone who goes down to the Frozen Deep
+    fights the same Leviathan, and calling the shareholder meeting pulls
+    everyone in the game into the boardroom to fight Max together.
+  - The boxing bear has been in a few fights: a black eye, bruises,
+    scratches and a plaster.
+  - Servers remember each player's finished goals, so joining doesn't
+    hand you every goal (and its money) again.
+  - Leave a server while driving and your vehicle stays parked there.
+  - The workbench pages every tab, so nothing runs off the bottom.
+
+NEW IN v15: WORN GEAR, BACKPACKS, WEATHER AND WEIGHT, TOURISTS
+  - INVENTORY (I): a WORN column, like armour slots: HEAD (headlamp),
+    EYES (night vision), BODY (heated suit / fur coat), ARMOR, FEET
+    (crampons), BACK (jetpack) and BAG. Gear only works while worn.
+    Right click gear in your pockets to put it on. Gear you make or pick
+    up goes on by itself if that slot's free; old worlds put it on for you.
+  - BACKPACKS (workbench, GEAR tab): SMALL +5 slots, BIG +15 slots. Wear
+    one in the BAG slot; its slots show on the right of the inventory.
+  - Tools and gear have real 3D pictures in the slots now.
+  - A new little boss: the BOXING BEAR, a polar bear on two feet in red
+    gloves and shorts. Every so often one turns up near someone and wants
+    a fight. It bounces in and jabs; every fourth punch it winds up a
+    haymaker (right glove pulled back, a red light over its head) that
+    hits hard and knocks you flying - back off when you see it. Knock it
+    out for $800, meat and fur.
+  - BUILDING UPDATE 5 - weather and weight:
+      * Weight: scaffolding holds 2 floors, finished foundations 4, and a
+        steel frame (half its walls steel) 4 more. Build higher and it
+        creaks, the walls crack, and the top comes down in dust and
+        falling pieces. Aiming a wall tells you before you put it up.
+      * Weather: clear, snow, and BLIZZARDS (thick fog, the cold cuts
+        through you outside). Blizzards wear scaffolding down and crack
+        windows; a broken window lets the cold into the room.
+      * HAMMER (workbench, GEAR tab): hold it and click worn scaffolding
+        (1 wood) or a cracked window (1 sand) to mend it.
+      * Snow piles up on flat roofs, floors and balconies (sloped roofs
+        shed it). At 45 cm the roof groans, at 70 cm it caves in. Shovel
+        it off: hold the SHOVEL and left click the snow (you get ice).
+      * Ice walls slowly melt near furnaces, fires, heaters and lava.
+      * Fresh snow keeps footprints; snowfall and blizzards fill them in.
+  - BUILDING UPDATE 6 - the tourism chain:
+      * The AIRPORT is built in parts: a RUNWAY (12+ in a line) and a
+        CONTROL TOWER beside it, a TERMINAL within 8 of the tower, and up
+        to 4 GATES within 6 of the terminal. Each part brings flights more
+        often and more passengers per plane (point at the tower to see).
+      * Passengers get off the plane with cash and walk to your HOTEL.
+        No signs any more: any closed room (walls, a roof, a door) with a
+        BED in it is a hotel room, one guest a bed. They pay when they
+        check in and again every night they stay.
+      * No free room: they look about, then fly home unhappy, and flights
+        come less often. Happy guests checking out bring more.
+      * A CASINO is any closed room with 2+ games (slots, roulette, cards,
+        dice). Guests go over and gamble, and lose (or win) by the real
+        odds: slots give back 92%, single-zero roulette 97.3%, the dice
+        pass line 98.6%, blackjack the way tourists play it about 96%.
+        Green numbers over them: money you made. Red: money you paid out.
+      * BUILDING SCORE: stand in a hotel room to see it. Size, materials
+        (steel beats wood beats ice, finished foundations), light (lamps,
+        windows, a lit fireplace) and decoration (tables, baths, lockers,
+        plants...) make 1-5 stars. More stars: richer tourists, who pay
+        more a night and bet bigger.
+      * Old worlds: casino and hotel signs still work as before.
+
+NEW IN v14: BETTER-LOOKING BUILDINGS, BLUEPRINTS, ROOMS
+  - Walls look like what they are: wood walls are plank courses, ice
+    walls are staggered blocks, steel walls ribbed panels. Floors are
+    planks on joists, doors have panels and a frame, windows a sill and
+    real glass. Far-off buildings are drawn plainer, to stay fast.
+  - BUILDING UPDATE 3 - blueprints and building together:
+      * Z: blueprint mode. Pieces go down as see-through GHOSTS, for free.
+        Blue: fine. Red: it wouldn't be held up once built.
+      * Out of blueprint mode, hold the real piece and point at its ghost
+        to build it there. Anyone in the game can fill in the same ghosts.
+      * In blueprint mode: C copies the building you point at, V pastes it
+        as ghosts where you point. Right click removes a ghost.
+      * Leaving blueprint mode tells you what's still to build.
+  - BUILDING UPDATE 4 - rooms and life inside:
+      * Floors closed in by walls, doors and windows, roofed, with a door,
+        make a ROOM: stand in one to see its size and warmth.
+      * FIREPLACE (base tab): a stone wall with a hearth and a chimney. E
+        lights it (2 wood, 1 coal or 1 blubber, 5 minutes a go). A room
+        with a lit fire keeps you warm; smoke rises from the chimney, and
+        the fire lights up the room.
+      * At night, windows of roofed rooms glow: your base shows from afar.
+      * LIFT (base tab), in buildings of 3+ storeys: put lifts in the same
+        spot on different floors, E on one rides to the next one up (from
+        the top, back down to the bottom).
+      * E holding WIRE or PIPE on a wall or floor lays it inside. Wired
+        walls and floors joined to a running generator carry its power:
+        machines next to them work. Piped ones joined to a well are taps:
+        E on them for a drink.
+  - Fixes: ladders don't fling you at the top any more; you step off a
+    ladder straight onto the floor; E on a ladder opens the door above it.
+
+NEW IN v13: THE GRAPHICS CARD, AND BUILDING PROPERLY
+  - All three draw the 3D with OpenGL on the graphics card now (Windows,
+    Linux and Mac): far faster, sharper, same game. The menus and HUD are
+    the same as ever. UM2_SOFT=1 goes back to the old way if you need it.
+    (Mac: if the graphics card can't be set up, the game notices and
+    draws the old way from then on; delete ~/.ultramelt2_gpu_try to retry.)
+  - Night vision and the lab's highs work on the graphics card too.
+  - More life: richer colours; the air takes each biome's colour; leaves
+    drift off the pines, snow falls, embers rise over volcanoes, fireflies
+    come out in the forest at night.
+  - BUILDING UPDATE 1 - foundations and clean structure:
+      * Nothing goes on bare ground but SCAFFOLDING (base tab). It levels
+        the ground: floors go on top. Click scaffolding again to stack it
+        a level higher. New scaffolding next to old comes up level with it.
+      * FLOORS go on scaffolding (or on top of walls, or reach out one cell
+        from a floor that's held up).
+      * WALLS, DOORS and WINDOWS sit on the EDGES of floors: point at a
+        floor and they go on its nearest edge. Point at a wall's end to
+        put the next one along it, at its middle to put one on top.
+      * ROOF tiles (or floors) on top of walls are the next storey's floor.
+      * LADDERS go on an edge: walk into one holding W to climb.
+      * Things need holding up: take a support away and what it held
+        falls (you get the pieces back).
+      * The old tile walls, floors and roofs still stand in old worlds.
+  - BUILDING UPDATE 2 - doors, windows and finishing:
+      * E opens a door; two doors side by side open together. R on a door
+        locks it: then only you can open it (R again unlocks).
+      * Under a roof you stay much warmer; windows let the daylight in
+        (rooms without them are dim) and the warmth out at night.
+      * RAILINGS (half walls) for balconies, so you don't fall off.
+      * SLOPED ROOF pieces climb one level the way you face (R turns
+        them), and GABLES close the ends (R: climbing, falling or full).
+      * E on scaffolding finishes it into a foundation: concrete (2 sand
+        + 1 steel), stone (4 ore) or ice (6 ice). Unfinished scaffolding
+        snows over and wears; left long enough, it gives way.
+      * STAIRS are the comfy way up: a whole storey, no climbing.
+
+NEW IN v12
+  - MUCH FASTER AT LONG RENDER DISTANCE: the game used to look at every
+    tile round you each frame for trees and rocks (8,000+ at the longest
+    distance); now it keeps a list of just the ones with something on
+    them. Small things (ore, bushes, flowers, holes) stop being drawn
+    50 units out, big ones (ice, spikes) at 80; trees go all the way.
+    On our test machine: 59 -> 81 fps at the longest render distance.
+
+NEW IN v11
+  - Typing an address: SPACE now puts in the dots and then the colon for
+    you (78 154 103 46 10403 shows as 78.154.103.46:10403), and the
+    colon key works on any keyboard.
+  - Worlds are single NAME.world files now (old .um2 worlds are renamed
+    by themselves). Copy one to a server to play it with friends.
+  - SERVER.PROPERTIES for the server: which world, owner, passwords on or
+    off, a whitelist, a welcome message, how often it saves. See
+    SERVER.txt. The server keeps its worlds right next to it.
+  - A world remembers who plays it in single player (your name as of the
+    last save). Upload it to a server and that name gets its inventory -
+    no setting needed.
+
+NEW IN v10
+  - SERVER FIX: the Linux build (and so the server) now runs on older
+    Linux too - Wispbyte's "GLIBC_2.38 not found" is gone.
+  - SAFER SAVES: the world is written to a side file first and the last
+    good save is kept as NAME.um2.bak. If a save is ever cut short, the
+    game loads the backup. QUIT GAME and SAVE AND QUIT both save first.
+  - FASTER LIGHTS: lamps and fires now light each triangle near them
+    instead of every pixel - night with lights costs a fraction of what
+    it did, with a chunky retro look.
+  - FASTER WORLD: far terrain is drawn in big pieces, far pines are one
+    cone, and small rocks and bones are only drawn close up. Things behind
+    you were already skipped.
+  - SILICON: smelt 2 QUARTZ + 1 COAL (smelter, or the workbench). Quartz is
+    the white crystal deposit on the ice shelf, and comes out of mines.
+
+NEW IN v9
+  - YOUR OWN SERVER: ultramelt2-linux --server runs a world with no
+    window, on Wispbyte or any Linux box, and prints the address to give
+    your friends. See SERVER.txt (start.py / index.js are the launchers).
+  - ACCOUNTS: the host (or server) keeps every player's inventory under
+    their name. The first time you join somewhere you set a password for
+    your name; after that the host asks for it before sending the world.
+    One try every 5 seconds. Nobody can join as you and take your stuff.
+  - Your name stays the same between games now.
+  - THE HUNTER: some research huts are now hunters' cabins. Go near one
+    and the hunter comes out shooting fans and rings of slow glowing
+    bullets - dodge them. 1500 health. Kill him for $1500, gold, and his
+    HUNTER'S RIFLE (70 damage, quick, long range - you can't make one).
+  - New worlds: far more volcanoes, and cobalt in the snow hills and
+    forests too, not just the glacier spikes and volcanoes. (Old worlds
+    keep their land, so your base doesn't move.)
+  - CRYSTAL is useful: CRYSTAL PICKAXE (workbench, gear tab: mines 2.5x
+    faster), CRYSTAL LAMP (lights twice as far), CRYSTAL TURRET (3x a
+    turret's damage). Plus lenses, quantum cores and the lab, as before.
+  - INVENTORY FULL no longer throws things away: what doesn't fit lands
+    at your feet, and mining stops until you drop something (Q).
+
+NEW IN v8
+  - Frost wraiths nerfed: a third as many, weaker, slower, and they only
+    come for you when you're near. Snow stalkers are rarer too.
+  - TURRETS now shoot wraiths, stalkers, wolves and the yeti (and
+    anything that's angry with you), from further away.
+  - Buildings flash for half a second when they're hit, not forever.
+  - SPLITTERS can be set: E on one cycles 50/50, 75% left, 25% left,
+    all left, all right. It's shown when you look at it.
+  - CONVEYOR BRIDGE (workbench, logistics): a ramp that carries items up
+    over the next tile and down onto the one after - put a belt crossing
+    underneath it. 3 plate + 1 gear.
+  - FASTER: model colours are worked out once instead of every triangle,
+    tiny far-off things (pebbles, items) aren't drawn, and the scan for
+    trees and rocks skips everything behind you. Still slow? Lower RENDER
+    DISTANCE in settings - it's the biggest cost - and a smaller window
+    is faster than full screen.
+  - NEW DAY MUSIC: a groove at 102 bpm - a sliding 808 bass playing the
+    tune, lots of drums (kick, claps, rims, hat rolls, shakers, congas),
+    warm chord stabs and a slow synth lead. No arpeggios. The calm track
+    still plays at night.
+  - Windows: no more black terminal window behind the game.
+  - WALL CORNERS join up: a wall reaches out to meet one that turns the
+    corner, even round an empty corner tile. Ice, steel, wood, windows.
+  - BLAST FURNACE (workbench, factory): a smelter 4x as fast, with a
+    bigger hopper. Keeps up with MK2 drills. 10 steel, 4 gear, 2 motor.
+  - AUTOMATIC WELL (factory): pumps dirty water out of its front by
+    itself. Put a WATER PURIFIER right in front of it (or belt it there)
+    and belt the clean water wherever you want it.
+  - LOCKER (base): storage that's yours alone, not the company's, and
+    tools go in it too (park the flare gun once you've got a rifle).
+    Each locker has its own 15 slots.
+  - STAIRS (base): roofs are now a second floor you can walk on. Put
+    stairs facing a roof (R turns them) and walk up.
+  - Q drops whatever's in your hand. Walk over it to pick it back up.
+  - LAMPS AND FIRES LIGHT THINGS UP at night: the ground, walls and
+    machines round them glow warm. And their glow no longer shows
+    through walls.
+  - ITEMS LOOK LIKE THINGS: water is a glass, dirty water a bucket, meat
+    a steak, fish a fish, wood a log, gears are gears, ingots, rocks,
+    bottles, crystals... in your hand, on belts, and in the inventory
+    (the icons are little renders of them).
+
+NEW IN v7
+  - GOALS: 18 things to do, from your first ore to your first casino,
+    each paying a little. The next one shows at the top once the
+    tutorial's done; O shows them all.
+  - HUNTING: animals drop where they die. Walk up and press E to
+    butcher them for meat, fur and tusks. (Turret kills still go
+    straight to storage.)
+  - Distance haze on the horizon, much more varied ground (bare blue
+    ice, old crusted snow, gravel, moss), and things lying about:
+    boulders, pebbles, ice shards, dry grass, bones, dead trees, logs,
+    snowdrifts.
+  - Cogs are bigger and mesh properly: side by side they turn opposite
+    ways with their teeth between each other.
+  - SURVIVAL: FOOD and WATER bars. Run out and you start dying. Eat what
+    you hunt (butcher it, cook it on a campfire). H eats or drinks
+    whatever you need most.
+  - WATER: a WELL by head office, and meltwater RIVERS winding across
+    the land. Both give dirty water: boil it on a campfire (E) or build a
+    WATER PURIFIER (it also melts ice). Dirty water makes you sick.
+  - DAY AND NIGHT: a 16-minute day. At night it gets dark (lamps and
+    fires still glow), wolf packs double, SNOW STALKERS creep up and
+    charge, and FROST WRAITHS drift in - they melt away at dawn.
+  - SNIPER RIFLE (workbench, tools): hold right click to look down the
+    scope. 120 damage, for the big things.
+  - SHOVEL (key 3 when you start): left click digs the ground down (you
+    get ice), right click piles it back up. Dig pits, build ramps, flatten
+    a spot for your base. Everyone sees it, and it's saved.
+  - VEHICLES (workbench, logistics): SNOWMOBILE, BUGGY (4 wheels - new
+    WHEEL item: 2 plastic + 1 steel) and a HOVERBIKE. E to get in, W/S
+    throttle, A/D steer, space brakes, E to get out and park. They burn
+    coal or fuel you carry (not the hoverbike). Run animals over.
+  - CAVES AND MINES: no more pressing E. Walk into a cave mouth or an old
+    mine's doorway and you're in; walk back to the light to come out.
+  - MORE FUN: a faster, bouncier day track (124 bpm, kick and claps; the
+    slow one comes back at night), damage numbers and a hit marker,
+    speed lines and a wider view when you go fast, confetti and a banner
+    when you finish a goal, light beams over carcasses you haven't
+    butchered, snowfall, shooting stars at night, sparkle when you mine.
+  - THE LAB (workbench, LAB tab): a silly cartoon drug empire, Schedule
+    One style. Grow WEED and COCA in GROW POTS (seeds come from berry
+    bushes and frost flowers; water them; a lamp beside them helps).
+    PARTY JUICE (fuel + 2 berries) goes in the COOK STATION with a
+    crystal for blue METH; the LEAF PRESS squashes coca into COKE; the
+    MIXER blends weed + meth + coke into rainbow DOPE. Make BAGGIES
+    (1 plastic = 10), and shady BUYERS walk up when you're carrying:
+    E to sell. Night pays more. If a deal looks too good, it's a cop.
+    Click with it in your hand to use it: speed, munchies, wobbly
+    rainbow screens. 3 new goals. Guide page: THE LAB.
+
+v6
+  - ONLINE PLAY FIXED. The old relay (bore.pub) was shut down, so codes
+    never came. The game now uses Pinggy, a free tunnel that runs through
+    the ssh program built into Windows 10/11, Mac and Linux. No downloads,
+    no accounts. If it fails, the reason is shown under the code and
+    Esc > RETRY ONLINE CODE tries again.
+  - SETTINGS (title screen, or Esc in game): render distance, music
+    volume, sound volume, mouse sensitivity, invert mouse, FPS counter,
+    view bob, screen shake, music on/off, full screen, and a CONTROLS page.
+    Saved for next time.
+  - RECENT SERVERS: games you've joined are kept in JOIN > RECENT SERVERS.
+  - Linux/Mac: fixed the online code never starting, and file paths.
+  - MINES: abandoned mines out in the hills (timber doorway, rails, red
+    light). E to go down: tunnels with timbers, rails and lanterns, veins
+    of cobalt, copper, quartz, gold and crystal, minecarts full of loot,
+    ladders down to 4 levels, and ice spiders. Or build your own MINE
+    SHAFT: it sends deep ore out of its front and takes you down.
+  - HIGH TECH: cobalt, copper and quartz (new deposits too). Smelters
+    switch to whatever you feed them. Wire, silicon, MICROCHIPS, lenses,
+    kevlar, armor plate.
+  - MILITARY GEAR: assault rifle (full auto), RAILGUN, NIGHT VISION (N),
+    BODY ARMOR (half damage).
+  - COGS AND SPIN, like the Create mod: windmills and steam engines turn
+    cogwheels; cogs pass it on; crushers (1 ore -> 2 dust = double metal),
+    mechanical presses and mechanical drills spend it. It all visibly turns.
+  - ANIMALS: wolf packs, snow hares, musk oxen and a YETI in the spikes.
+  - CASINOS: slot machines, roulette (the wheel spins), card and dice
+    tables, tables, and a CASINO SIGN. A walled floor with a door, 3+
+    games and 5+ tables = an open casino: guests walk in, money comes in.
+  - HOTELS: a lobby with a HOTEL SIGN and doors off it into 8+ walled
+    rooms, each with a bed and a BATHROOM. Guests, and money.
+    (E on a sign says exactly what's missing.)
+  - AIRPORTS: lay 12+ RUNWAY tiles in a straight line and put a CONTROL
+    TOWER beside it. Airliners come in, land, turn round and take off
+    again: $300 a landing.
+  - COOKING: E on a campfire puts your raw meat and fish on sticks over
+    it. They smoke while they cook; E again to take them off.
+  - A proper SMELTER (brick tiers, an arched glowing mouth, a hopper,
+    bellows, a chimney, sparks), and real grey smoke everywhere (it used
+    to be rainbow sparkles).
+  - The guide (G) has pages for all of it.
+  - Fixed: aiming at an arctic fox could crash the game; putting down
+    the last of a building could crash the game.
+
+v5
+  - YOUR OWN INVENTORY, Minecraft style: 20 slots + a 5-slot hotbar (1-5).
+    Anything goes on the hotbar - tools, guns, food, logs, buildings.
+    I opens it. Click a stack to pick it up, click to put it down, right
+    click for half / one at a time. Point at a slot and press 1-5 to swap
+    it onto that key. Every player has their own; money, land and the
+    COMPANY STORAGE (E on a storage, or at head office) are shared.
+  - HOLD IT, CLICK IT: tools mine/chop/hit, guns shoot, food gets eaten,
+    buildings get put down (R turns them). No more build mode.
+  - WORKBENCH crafting uses what you carry and puts it in your inventory.
+  - CONVEYORS bend round corners now (and the guide has diagrams).
+  - TREES FALL when you chop them, and leave a stump.
+  - STRUCTURES: satellite stations, research huts, crashed planes and old
+    drilling rigs out on the ice. Blinking red lights; red dots on the
+    minimap. Their crates have loot and cash.
+  - CAMPFIRES (warm, E cooks your meat and fish), steak, cooked fish,
+    bandages, flowers, glowcaps, scrap, batteries, satellite chips, a
+    SHOTGUN, arctic foxes.
+  - New first-person guns and tools with hands, like the first game.
+  - Running uses stamina (shift), CTRL or C crouches. Slower walking.
+  - Other players: proper steps, lean back when they look up, crouch,
+    hold what they're holding; their shots show for everyone.
+  - The old music is back; the sky is darker.
+
+PLAYING WITH FRIENDS (up to 4) - NO TAILSCALE, NO ACCOUNTS, FREE
+  1. One of you: HOST A GAME, pick or make a world. After a few seconds
+     your screen shows a big ONLINE CODE, like  ABCDEF 41234.
+  2. Your friends, anywhere in the world: JOIN A GAME, type the code
+     (the space can be a space or a dot), press CONNECT.
+  Same wifi or hotspot? Even easier: your game shows up in their JOIN
+  list by itself - just click JOIN.
+
+  How the code works: the game runs the ssh program that comes with
+  Windows 10/11, macOS and Linux, and connects out to Pinggy (pinggy.io),
+  a free tunnel service, which hands out the code. Nobody pays, nobody
+  signs up. The code changes every time you host. Free Pinggy tunnels
+  last an hour; the game gets a new code by itself when one runs out
+  (friends already in may need to rejoin with the new code).
+  Anyone with the code can join, so only give it to friends.
+
+  If the code doesn't come:
+   - Windows: Settings > Apps > Optional features > add "OpenSSH Client"
+     (it's on by default on Windows 10 1809 and newer).
+   - Some school or work networks block it. Try a phone hotspot.
+   - The red line under "NO ONLINE CODE" says what went wrong.
+
+  127.0.0.1 means "this same computer" only. Two games on the SAME
+  computer can't both host.
+
+CONTROLS
+  WASD move, SHIFT run (stamina), CTRL or C crouch, SPACE jump (hold in
+  the air with a jetpack), mouse look, TAB frees the mouse
+  1-5         hotbar             LEFT CLICK   use what you hold
+  R           turn a building (before or after you put it down)
+  X / RIGHT   pick a building up
+  E           use: head office, workbench, storage, campfire, crates,
+              assembler / inserter / sorter setting, bed, caves, fishing
+  B           buy the plot you're standing in (it blinks gold)
+  I inventory   G guide   T chat   V talk   H eat   F fire   N night vision
+  M music     F11 fullscreen     Esc pause
+
+WORLDS
+  Saved in your home folder under ultramelt2_worlds, every minute and when
+  you quit. Older worlds still open (buildings you'd put down stay, and you
+  get a workbench).
