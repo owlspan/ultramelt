@@ -14,6 +14,31 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v28: THE MARKETS (L)
+  - Everything you sell belongs to a market: FUEL, ELECTRONICS, VEHICLES,
+    CONSTRUCTION, LUXURY, FOOD, HIGH TECH. The first time you sell into
+    one, you enter it - and meet the rival firms already there (Glacier
+    Oil, Snowchip, Tundra Motors...). L shows them all.
+  - MARKET SHARE follows what you sell, against what everyone else
+    pushes. 40%+ and the biggest share: you DOMINATE that market. The
+    board now also wants 4 dominated markets before the takeover.
+  - YOUR PRICE in each market: CHEAP (-20%, wins share fast), NORMAL, or
+    PREMIUM (+25%, loses share).
+  - RIVALS FIGHT BACK: price wars on whoever's winning (your prices
+    there drop 15%), price changes, and newcomers moving in cheap.
+    The Polar Times reports it all.
+  - PRICE PACTS: agree prices with a rival (or another player's company)
+    - no price wars between you, and +15% on everything you sell there.
+    Rivals won't deal with you till you hold 10%, or while they're angry.
+    Going CHEAP breaks every pact in that market - and they declare war.
+  - SQUEEZE: with a pact partner, gang up on someone (newcomers most of
+    all) and push them out of the market.
+  - BUY OUT a rival once you hold 15%: its whole share becomes yours.
+  - OWN COMPANIES games: players' companies compete in the markets too,
+    can offer each other pacts and squeezes (accept them in L).
+  - FIXED: mine carts in caves used the wrong model since v26, and two
+    timers (scaffold wear, worn-gear sync) were tangled since v19.
+
 NEW IN v27: AUTOMATIC UPDATES
   - The game checks github.com/owlspan/ultramelt (branch ultramelt2)
     when it starts. If there's a newer version, click UPDATE at the top
