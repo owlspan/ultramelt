@@ -14,6 +14,16 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v29: REAL CAVES, AND GOING DOWN
+  - Cave mouths are rocky hills with a dark arch you can see from far off.
+    Walk into the arch to go in; the hill round it is solid rock.
+  - Inside, caves are much bigger: wide halls, open chambers, a high roof,
+    rough rock walls, icicles and stalagmites.
+  - Glowing chalk arrows on the floor show the way back out, and an arrow
+    at the bottom of the screen says how far it is (in mines too).
+  - When someone dies, everyone sees it: their knees give, they topple
+    over, and they stay down until they wake up again.
+
 NEW IN v28: THE MARKETS (L)
   - Everything you sell belongs to a market: FUEL, ELECTRONICS, VEHICLES,
     CONSTRUCTION, LUXURY, FOOD, HIGH TECH. The first time you sell into
