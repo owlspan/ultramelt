@@ -14,6 +14,18 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v32: NEW WAYS TO PROCESS (E ON A MACHINE TO PICK, G FOR THE GUIDE)
+  - SMELTER: SCRAP STEEL - 2 scrap + 1 coal -> steel
+  - CRUSHER: RECYCLE SCRAP - 1 scrap -> 2 iron dust
+  - KILN: RENDER BLUBBER - 3 blubber -> fuel; SMOKE MEAT - 2 meat + wood -> 2 steak
+  - PRESS: FUR BOOTS - 2 fur + plastic -> snow boots; CAN FISH - 2 cooked
+    fish + plate -> canned food
+  - POLISHER: IVORY JEWELRY - 2 tusks + gold -> jewelry
+  - SIFTER: PAN FOR GOLD - 30 sand -> 1 gold (slow)
+  - STONE SAW: FUEL PELLETS - 3 wood -> fuel
+  Hunting, scrap and sand all have somewhere to go now.
+  Also: company saves checked (rogues and gangs come back as they were).
+
 NEW IN v31: COMPANIES, ROGUES AND GANGS (servers with companies=separate)
   - Joining: you choose. Join a company that's there, found your own (you
     name it) while there's room (max-companies), or go rogue.
