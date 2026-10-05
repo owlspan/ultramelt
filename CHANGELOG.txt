@@ -14,6 +14,15 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v33: LOCKERS WITHOUT DUPLICATES (OR DELAY)
+  - Clicking in a locker happens on your screen at once: no waiting on
+    the server after each click.
+  - The server checks every click against the real locker. If it doesn't
+    match (someone else took it first, or clicks crossed), it refuses, and
+    your game undoes that click and the ones after it: your cursor and
+    inventory go back to what you really have. Moving things around fast
+    can't make copies any more.
+
 NEW IN v32: NEW WAYS TO PROCESS (E ON A MACHINE TO PICK, G FOR THE GUIDE)
   - SMELTER: SCRAP STEEL - 2 scrap + 1 coal -> steel
   - CRUSHER: RECYCLE SCRAP - 1 scrap -> 2 iron dust
