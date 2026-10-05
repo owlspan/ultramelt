@@ -14,6 +14,18 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v34: THE AUTO COOK, AND TIDYING YOUR STUFF
+  - AUTO COOK (workbench, machines tab: 6 plate, 2 gear, 4 coal): a brick
+    oven for your factory. Belt raw meat, raw fish or dirty water in and
+    steak, cooked fish or clean water come out the front. It switches to
+    whatever it's fed once it's empty.
+  - Picking up a campfire with food on it gives you the food back (cooked
+    if it was done, raw if not) instead of it vanishing.
+  - Inventory and lockers: point at a slot and press Q to drop one,
+    CTRL+Q to drop the whole stack.
+  - BURN IT on the inventory screen: pick something up, click BURN IT,
+    click again to be sure. It's gone for good.
+
 NEW IN v33: LOCKERS WITHOUT DUPLICATES (OR DELAY)
   - Clicking in a locker happens on your screen at once: no waiting on
     the server after each click.
