@@ -1,4 +1,4 @@
-<img src="ultramelt2.png" width="96" align="right">
+<img src="ultramelt.png" width="96"> <img src="ultramelt2.png" width="96">
 
 # UltraMelt
 
