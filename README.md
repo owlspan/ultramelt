@@ -1,3 +1,5 @@
+<img src="ultramelt2.png" width="96" align="right">
+
 # UltraMelt
 
 The update service for **UltraMelt** and **UltraMelt 2**.
