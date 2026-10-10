@@ -14,6 +14,14 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v39: AN ICON
+  - UltraMelt 2 has an icon: on the exe, the window and taskbar (Windows),
+    the window (Linux), and the Dock and Finder (Mac: the game is now
+    "UltraMelt 2.app"; START ON MAC.command still sets it up the first
+    time).
+  - HOW TO OPEN - READ ME FIRST.txt: getting past Windows SmartScreen,
+    macOS's "can't be opened" and Linux permissions.
+
 NEW IN v38: SERVERS UPDATE THEMSELVES
   - A dedicated server started with start.py or index.js now checks for
     new versions (on start and every 30 minutes), downloads it, warns the
