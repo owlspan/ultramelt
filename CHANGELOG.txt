@@ -14,6 +14,17 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v36: WHAT NEXT, AND BIGGER WINDOWS
+  - Once something makes itself (10 of it arrive in a storage or export
+    pad by belt), the game says so and a NEXT box under the goal tells you
+    what to build from it: which machine, what to belt in, what comes
+    out. When that's automated too, the next NEXT appears. Things nothing
+    uses get "sell it": an export pad, contracts, the markets. It's saved
+    with the world, and on a server everyone sees it.
+  - Mac: the window can be dragged bigger and the green button makes it
+    full screen. Linux: dragging the window bigger now grows the picture
+    (before it stayed small in the corner).
+
 NEW IN v35: 12 PLAYERS, LANGUAGES, A HELPER
   - Up to 12 players at once (it was 4, so a dedicated server only fit 3).
     server.properties: max-players=11 (not counting the server). Old
