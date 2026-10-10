@@ -14,6 +14,29 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v35: 12 PLAYERS, LANGUAGES, A HELPER
+  - Up to 12 players at once (it was 4, so a dedicated server only fit 3).
+    server.properties: max-players=11 (not counting the server). Old
+    server.properties files without it get 11.
+  - HOST A GAME has SERVER SETTINGS: own companies or all together, most
+    companies, fighting between/within companies, passwords, most players.
+    Saved as server.properties next to your worlds (same names as a
+    dedicated server's, so you can copy it to Wispbyte).
+  - The helper: hold a machine and a box says how to hook it up, with OUT
+    (where things come out) and IN marked on the ground. Look at a placed
+    machine and it shows what it needs, what it has, and what's wrong
+    (no coal, nothing at OUT, full, no spin).
+  - Workbench search: click SEARCH at the top right and type. Finds tools,
+    machines and materials from every tab.
+  - The markets screen always lists what sells in each market (SELL TO
+    STAY IN), even after you're in it.
+  - Languages: Settings > LANGUAGE: English, Espanol, Portugues, Francais.
+  - Ice walls (and anything that comes down) shatter where they are
+    instead of sinking through what's below.
+  - The white window on start: if the start hangs it restarts itself; after
+    two failed starts in a row it starts without the graphics card once.
+    The log (ultramelt2_log.txt) now says which step it was on.
+
 NEW IN v34: THE AUTO COOK, AND TIDYING YOUR STUFF
   - AUTO COOK (workbench, machines tab: 6 plate, 2 gear, 4 coal): a brick
     oven for your factory. Belt raw meat, raw fish or dirty water in and
