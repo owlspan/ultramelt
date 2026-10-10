@@ -14,6 +14,13 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v38: SERVERS UPDATE THEMSELVES
+  - A dedicated server started with start.py or index.js now checks for
+    new versions (on start and every 30 minutes), downloads it, warns the
+    players a minute ahead, saves and restarts as the new version.
+    server.properties: auto-update=true, update-check-minutes=30.
+    Upload the new ultramelt2-linux and start.py once to get it going.
+
 NEW IN v37: PICK FROM A LIST
   - E on an assembler, a production line, an inserter or a sorter opens a
     list of everything it can be set to, with pictures (and what each
