@@ -14,6 +14,10 @@ FILES
 PRESS G IN THE GAME FOR THE GUIDE. The task at the top of the screen walks
 you through the first steps (mining, conveyors, storage, smelting).
 
+NEW IN v40: A NEW ICON
+  - The icon is a real shot from the game now: the boss in his hard hat
+    with a pickaxe, under the aurora.
+
 NEW IN v39: AN ICON
   - UltraMelt 2 has an icon: on the exe, the window and taskbar (Windows),
     the window (Linux), and the Dock and Finder (Mac: the game is now
